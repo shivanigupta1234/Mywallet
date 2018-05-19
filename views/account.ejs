@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+ <html>
+  <body>
+    <center>
+    <h1>Sender Account Info</h1>
+
+     <table>
+       <tr>
+         <td><h3>Account Address :</h3></td>
+         <td><%=myinfo.addr%></td>
+       </tr>
+       <tr>
+         <td><h3>Account Holder :</h3></td>
+         <td><%=myinfo.name%></td>
+       </tr>
+       <tr>
+         <td><h3>Remaining Balance :</h3></td>
+         <td><%=myinfo.value/1000000000000000000%><td>
+         </tr>
+       </table>
+     </center>
+     <center>
+     <h1> Receiver Account Info</h1>
+
+      <table>
+        <tr>
+          <td><h3>Account Holder name  :</h3></td>
+          <td><%=yourinfo.name%></td>
+        </tr>
+        <tr>
+          <td><h3>Amount Transferred</h3></td>
+          <td><%=yourinfo.value%><td>
+          </tr>
+          <tr>
+            <td><a href="/details"> Click To Continue</a><br></td>
+            <td><a href="/"> Logout</a><br></td>
+          </tr>
+        </table>
+      </center>
+     </body>
+     </html>
